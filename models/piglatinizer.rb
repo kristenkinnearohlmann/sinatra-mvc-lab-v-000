@@ -14,9 +14,12 @@ class PigLatinizer
     words_arr.each do |word|
       split_word = word.split("")
       if @@vowels.include?(split_word[0].downcase)
+        # Starts with a vowel
         pig_latin << word + "way"
+      elsif (!!@@vowels.include?(split_word[0].downcase) && !!@@vowels.include?(split_word[1].downcase))
+        # Starts with double consonant
       else
-        binding.pry
+        # Starts with single consonant
         pig_latin << split_word[1..split_word.length()].join("") + split_word[0] + "ay"
       end
 
