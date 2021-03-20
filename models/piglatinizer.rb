@@ -10,7 +10,7 @@ class PigLatinizer
     words_arr = words.split(" ")
     pig_latin = []
     words_arr.each do |word|
-      "#{word}"
+      pig_latin << word
     end
   end
 
