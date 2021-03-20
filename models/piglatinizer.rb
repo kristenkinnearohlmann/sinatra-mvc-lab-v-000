@@ -20,7 +20,7 @@ class PigLatinizer
       end
 
     end
-
+    binding.pry
     pig_latin.join(" ")
   end
 
