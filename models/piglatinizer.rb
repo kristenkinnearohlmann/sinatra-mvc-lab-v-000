@@ -8,6 +8,8 @@ class PigLatinizer
 
   def piglatinize(words)
     "Words will be here #{words}"
+
+    words_arr = words.split("")
   end
 
 end
