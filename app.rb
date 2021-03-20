@@ -10,7 +10,7 @@ class App < Sinatra::Base
   post '/output' do
     @input_phrase = params
 
-    erb :output    
+    erb :output
   end
-  
+
 end
