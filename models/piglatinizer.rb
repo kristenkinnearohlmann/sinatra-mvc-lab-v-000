@@ -15,7 +15,8 @@ class PigLatinizer
       split_word = word.split("")
       if @@vowels.include?(split_word[0])
       #   pig_latin << word
-      # else
+      else
+        binding.pry
       #   pig_latin << split_word[1..split_word.length()] + split_word[0]
       end
 
