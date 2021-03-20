@@ -14,7 +14,6 @@ class PigLatinizer
     words_arr.each do |word|
       split_word = word.split("")
       if @@vowels.include?(split_word[0].downcase)
-        binding.pry
         pig_latin << word + "way"
       else
         pig_latin << split_word[1..split_word.length()].join("") + split_word[0] + "ay"
