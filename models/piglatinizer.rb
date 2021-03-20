@@ -16,6 +16,7 @@ class PigLatinizer
       if @@vowels.include?(split_word[0].downcase)
         pig_latin << word + "way"
       else
+        binding.pry
         pig_latin << split_word[1..split_word.length()].join("") + split_word[0] + "ay"
       end
 
