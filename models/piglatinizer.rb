@@ -22,7 +22,7 @@ class PigLatinizer
 
     end
 
-    pig_latin
+    pig_latin.join(" ")
   end
 
 end
