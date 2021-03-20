@@ -13,11 +13,11 @@ class PigLatinizer
 
     words_arr.each do |word|
       split_word = word.split("")
-      # if @@vowels.include?(split_word[0])
+      if @@vowels.include?(split_word[0])
       #   pig_latin << word
       # else
       #   pig_latin << split_word[1..split_word.length()] + split_word[0]
-      # end
+      end
 
     end
 
