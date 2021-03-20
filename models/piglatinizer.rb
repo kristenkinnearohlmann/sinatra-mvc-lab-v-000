@@ -9,9 +9,12 @@ class PigLatinizer
   def piglatinize(words)
     words_arr = words.split(" ")
     pig_latin = []
+
     words_arr.each do |word|
       pig_latin << word
     end
+
+    pig_latin
   end
 
 end
