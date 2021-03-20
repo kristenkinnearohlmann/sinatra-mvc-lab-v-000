@@ -12,6 +12,7 @@ class PigLatinizer
     pig_latin = []
 
     words_arr.each do |word|
+      binding.pry
       split_word = word.split("")
       if @@vowels.include?(split_word[0])
         pig_latin << word
