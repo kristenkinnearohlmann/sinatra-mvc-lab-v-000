@@ -17,8 +17,7 @@ class PigLatinizer
         binding.pry
       #   pig_latin << word
       else
-        binding.pry
-      #   pig_latin << split_word[1..split_word.length()] + split_word[0]
+        pig_latin << split_word[1..split_word.length()].join("") + split_word[0] + "ay"
       end
 
     end
