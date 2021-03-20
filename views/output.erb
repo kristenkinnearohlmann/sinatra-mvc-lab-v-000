@@ -9,6 +9,6 @@
     <p>Your original phrase is: <br>
     <%= @input_phrase %></p>
     <p>Your phrase is in pig latin is: <br>
-    <%= @output %></p>
+    <%= @output.piglatinize(@input_phrase) %></p>
   </body>
 </html>
