@@ -18,6 +18,7 @@ class PigLatinizer
         pig_latin << word + "way"
       elsif (!!@@vowels.include?(split_word[0].downcase) && !!@@vowels.include?(split_word[1].downcase))
         # Starts with double consonant
+        binding.pry
         pig_latin << split_word[2..split_word.length()].join("") + split_word[0..1] + "ay"
       else
         # Starts with single consonant
