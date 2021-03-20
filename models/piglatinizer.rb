@@ -20,7 +20,6 @@ class PigLatinizer
         # Starts with double consonant
         pig_latin << split_word[2..split_word.length()].join("") + split_word[0..1] + "ay"
       else
-
         # Starts with single consonant
         pig_latin << split_word[1..split_word.length()].join("") + split_word[0] + "ay"
       end
